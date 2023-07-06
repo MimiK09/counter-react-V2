@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Counter = (props) => {
+const Counter = () => {
 	const [counters, setCounters] = useState([0]);
 
 	const addCounters = () => {
