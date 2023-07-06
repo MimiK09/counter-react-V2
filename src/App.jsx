@@ -7,10 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Counter from "./components/Counter";
 
 function App() {
-
-
-
-
 	return (
 		<>
 			<header>

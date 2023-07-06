@@ -14,23 +14,57 @@ const Counter = (props) => {
 		}
 	};
 
-const incrementOne = (index) => {
-console.log("test", index);
-};
+	const incrementOne = (index) => {
+		const newCounters = [...counters];
+		newCounters[index] = newCounters[index] + 1;
+		setCounters(newCounters);
+	};
+
+	const decrementOne = (index) => {
+		const newCounters = [...counters];
+		newCounters[index] = newCounters[index] - 1;
+		setCounters(newCounters);
+	};
+
+	const resetOne = (index) => {
+		const newCounters = [...counters];
+		newCounters[index] = 0;
+		setCounters(newCounters);
+	};
 
 	return (
 		<div className="column">
 			<button onClick={addCounters}>Add A counter</button>
-			<div className="line">
+			<div className="line space">
 				{counters.map((element, index) => (
 					<div className="column" key={index}>
-						<div className="line">
-							<button>-</button>
-							<p>{counters[index]}</p>
-							<button onClick={incrementOne}>+</button>
+						<div className="line ">
+							<button
+								className="nobutton counter"
+								onClick={() => {
+									decrementOne(index);
+								}}
+							>
+								-
+							</button>
+							<p className="counter">{element}</p>
+							<button
+								className="nobutton counter"
+								onClick={() => {
+									incrementOne(index);
+								}}
+							>
+								+
+							</button>
 						</div>
 						<div>
-							<button>Reset</button>
+							<button
+								onClick={() => {
+									resetOne(index);
+								}}
+							>
+								Reset
+							</button>
 						</div>
 					</div>
 				))}

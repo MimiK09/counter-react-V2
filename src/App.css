@@ -1,38 +1,75 @@
-#root {height: 1vh;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+#root {
+	height: 1vh;
+	font-family: "Roboto", sans-serif;
 }
 
 header {
-  width: 100%;
-  margin : 0 auto;
-  display:flex;
-  align-items: center;
-  height : 120px;
-  border-bottom: 1px solid grey;
-}
+	font-size: 36px;
 
-.icon{
-  font-size : 60px;
-  color: rgb(92, 71, 211);
+	width: 100%;
+	margin: 0 auto 50px auto;
+	display: flex;
+	align-items: center;
+	height: 120px;
+	border-bottom: 1px solid grey;
+}
+header > * {
+	padding: 0 24px;
+}
+.icon {
+	font-size: 60px;
+	color: rgb(92, 71, 211);
 }
 
 main {
-  gap:30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	gap: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.column{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap:30px;
-}
-
-.line{
-  gap:30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
 }
 
+.line {
+	gap: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	font-size: 16px;
+	border: none;
+	background-color: rgb(92, 71, 211);
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+}
+
+.counter {
+	font-size: 48px;
+	border: none;
+	background-color: rgb(92, 71, 211);
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+}
+
+.nobutton {
+	border: none;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+	color: black;
+}
+
+.space {
+	gap: 80px;
+}
