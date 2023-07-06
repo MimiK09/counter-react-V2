@@ -1,0 +1,43 @@
+#root {height: 1vh;
+}
+
+header {
+  width: 100%;
+  margin : 0 auto;
+  display:flex;
+  align-items: center;
+  height : 120px;
+  border-bottom: 1px solid grey;
+}
+
+.icon{
+  font-size : 60px;
+  color: rgb(92, 71, 211);
+}
+
+main {
+  gap:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+}
+
+.counter{
+  gap:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-mini{
+  gap:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
